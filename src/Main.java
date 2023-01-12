@@ -1,20 +1,15 @@
 import java.sql.SQLOutput;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
 
-        int initialAccount = 100;
-        int payment = 1100;
-        int bonus;
-        if (payment > 1000) {
-            bonus = payment / 100;
-        } else {
-            bonus = 0;
-        }
-        int finalAccount = initialAccount + payment + bonus;
+        int ticketPrice = 1000;
 
-        System.out.println("На счету:" + finalAccount);
+        int bonus = ticketPrice/20;
 
+        System.out.println("Бонусных миль:" + bonus);
 
     }
 }
