@@ -3,17 +3,17 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
 
-        int initial_account = 100;
-        int payment = 1200;
+        int initialAccount = 100;
+        int payment = 1100;
         int bonus;
-        if (payment>1000) {
-            bonus = payment/100;
+        if (payment > 1000) {
+            bonus = payment / 100;
         } else {
             bonus = 0;
         }
-        int final_account = initial_account + payment + bonus;
+        int finalAccount = initialAccount + payment + bonus;
 
-        System.out.println("На счету:" + final_account);
+        System.out.println("На счету:" + finalAccount);
 
 
     }
